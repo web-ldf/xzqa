@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/moment.min.js"></script>
+    <script>
+        //构建以当前日期的moment对象
+        var moment1=moment();
+        var moment2=moment(undefined);
+        var moment3=moment([]);
+        var moment4=moment({});
+        console.log(moment1);
+        console.log(moment2);
+        console.log(moment3);
+        console.log(moment4);
+
+        /////
+        var moment5=moment("2020-5-16");
+        console.log(moment5);
+        //定义一个时间戳
+        var timer=1586908800;
+        var moment6=moment.unix(timer);
+        console.log(moment6);
+        //获取相关的信息
+        console.log(moment6.year()+"年");
+        console.log((moment6.month()+1)+"月");
+        console.log(moment6.date()+"日");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
